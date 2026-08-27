@@ -50,11 +50,10 @@
               value="{{ search.terms | escape }}"
               placeholder="{{ 'general.search.search' | t }}"
               {%- if settings.predictive_search_enabled -%}
-                role="combobox"
+                list="{{ input_id }}-datalist"
                 aria-expanded="false"
                 aria-owns="predictive-search-results"
                 aria-controls="predictive-search-results"
-                aria-haspopup="listbox"
                 aria-autocomplete="list"
                 autocorrect="off"
                 autocomplete="off"
@@ -62,6 +61,9 @@
                 spellcheck="false"
               {%- endif -%}
             >
+            {%- if settings.predictive_search_enabled -%}
+              <datalist id="{{ input_id }}-datalist"></datalist>
+            {%- endif -%}
             <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
             <input type="hidden" name="options[prefix]" value="last">
             <button
