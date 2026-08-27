@@ -1,0 +1,133 @@
+{% comment %} {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }} {% endcomment %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  .swiper-pagination {
+    position: inherit;
+  }
+  .swiper-pagination-bullet {
+    background-color: #363266;
+  }
+
+  .card-text p {
+    font-size: 16px;
+    display: contents;
+  }
+
+</style>
+
+
+<div class="multicard-swiper tw-pt-20 tw-pb-24  tw-px-10 tw-overflow-hidden">
+  <div class="swiper-wrapper tw-h-[900px] sm:tw-h-[580px] xl:tw-h-[480px] 2xl:tw-h-[530px] ">
+    {% for block in section.blocks %}
+      {%- case block.type -%}
+        {%- when "multicard" -%}
+          <div
+            class="swiper-slide tw-rounded-3xl"
+            {{ block.shopify_attributes }}
+            style="background-color: {{ block.settings.card_color }}">
+            <span class="tw-mt-10    tw-pl-10  tw-block   tw-text-5xl md:tw-mb-20   tw-leading-normal" style="color: {{ block.settings.text_color }};">
+              <span class="tw-h-9 tw-w-9 tw-rounded-full  tw-inline-block" style="background-color: {{ block.settings.text_color }}"></span>
+              {{ block.settings.card_title }}</span>
+            <div class="card-text  tw-px-10 tw-pb-5 tw-absolute  tw-mt-2" style="color: {{ block.settings.text_color }};">{{ block.settings.card_body }}</div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+  <div class="swiper-pagination tw-pt-3"></div>
+</div>
+{% comment %} 
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script> {% endcomment %}
+<script src="{{  'swiper-bundle.min.js' | asset_url  }}"></script>
+
+<script>
+  var swiper = new Swiper(".multicard-swiper", {
+    spaceBetween: 30,
+    slidesPerView: 3,
+    loop: false,
+    grabCursor: true,
+    keyboard: {
+      enabled: false
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true
+  },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      1072: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      1280: {
+        slidesPerView: 2,
+      },
+      1350: {
+        slidesPerView: 2,
+      },
+      1600: {
+        slidesPerView: 3,
+      },
+    }
+  });
+</script>
+
+
+{% schema %}
+  {
+    "name": "Custom Multicard",
+    "tag": "section",
+    "class": "shopify-section",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "multicard",
+        "name": "Card",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Card Title",
+            "id": "card_title",
+            "default": "Affordability: A Core Principle",
+            "placeholder": "Affordability: A Core Principle"
+          }, {
+            "type": "richtext",
+            "label": "Card Body",
+            "id": "card_body",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo leo ac ante porttitor, sed molestie mi faucibus. Morbi in viverra ligula, vitae suscipit velit. Ut pulvinar dolor nunc, suscipit mollis libero suscipit sit amet. In vestibulum, nisl fermentum laoreet mattis, elit urna pulvinar mi, eget dapibus dolor massa id ante.</p>"
+          }, {
+            "type": "color",
+            "label": "Card Color",
+            "id": "card_color",
+            "default": "#80C9C4"
+          }, {
+            "type": "color",
+            "label": "Text Color",
+            "id": "text_color",
+            "default": "#000"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Multicard"
+      }
+    ]
+  }
+{% endschema %}

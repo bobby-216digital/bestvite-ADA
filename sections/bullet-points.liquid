@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+<div class="" style="background: {{ section.settings.bullet-background-color }}">
+  <div class="page-width-desktop  bullet-point-container tw-mx-auto tw-overflow-hidden">
+    <div class="tw-text-3xl  tw-text-[#363266]  tw-font-valueSansProMedium  swiper-wrapper ">
+      {% for block in section.blocks %}
+        {%- case block.type -%}
+          {%- when 'bullet-point' -%}
+            <span class="swiper-slide  tw-text-nowrap md:tw-text-wrap tw-py-4 tw-inline-block tw-text-center" {{ block.shopify_attributes }}>
+              <a class="visited:tw-text-[#363266] active:tw-text-[#363266] tw-text-[#363266]" href="{{ block.settings.boing_point_url }}">
+                <span class="tw-inline-block tw-h-4 tw-w-4 tw-bg-[#363266] tw-rounded-full"></span>
+                {{ block.settings.bullet_point }}</a>
+            </span>
+        {% endcase %}
+      {% endfor %}
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<script src="{{  'swiper-bundle.min.js' | asset_url  }}" ></script>
+
+<script>
+  var swiper = new Swiper(".bullet-point-container", {
+    slidesPerView: 3,
+    spaceBetween: 50,
+    centeredSlides: true,
+   autoplay: {
+       delay: 4500,
+       disableOnInteraction: false,
+     },
+    loop: false,
+    grabCursor: true,
+    keyboard: {
+      enabled: false
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2
+      },
+      768: {
+        slidesPerView: 3
+      },
+      1024: {
+        slidesPerView: 3
+      },
+      1280: {
+        slidesPerView: 3
+      },
+      1536: {
+        slidesPerView: 3
+      },
+    }
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Custom Bullet Points",
+    "tag": "section",
+    "class": "bullet-points",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bullet-background-color",
+        "label": "Background color",
+        "default": "#80C9C4"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "bullet-point",
+        "name": "Bullet Point",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Bullet Point",
+            "id": "bullet_point",
+            "default": "Free shipping on orders over $20",
+            "placeholder": "Free shipping on orders over $20"
+          }, {
+            "type": "url",
+            "id": "boing_point_url",
+            "label": "Bullet Point 1 Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Bullet Points"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

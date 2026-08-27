@@ -1,0 +1,501 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_Njpbzj": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_TJTXnK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Health_3000_x_1800_px_-9.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections/black-friday-super-savings-collection",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_pMdiqd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/4_5a75a36e-2d39-4421-a255-1b39f8be854c.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "https://bestvite.com/collections/black-friday-super-savings-collection",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_TJTXnK",
+        "slide_pMdiqd"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 7,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Bestvite Brand Slideshow"
+      }
+    },
+    "custom_hero_v1_LBH7Hz": {
+      "type": "custom-hero-v1",
+      "settings": {
+        "custom_hero_background_color": "#094720",
+        "headline_1": "Transparency you can see,",
+        "headline_1_color": "#c9d646",
+        "headline_2": "quality you can trust.",
+        "headline_2_color": "#ffffff",
+        "button_text": "Shop now",
+        "button_url": "shopify://collections",
+        "button_background_color": "#c9d646",
+        "button_text_color": "#094720",
+        "hero_image": "shopify://shop_images/Bestvite_Inc_r1_03E_1648_989e8786-efc7-4bfe-bf29-ab5f73d4ef8e.jpg"
+      }
+    },
+    "bullet_points_btXamT": {
+      "type": "bullet-points",
+      "blocks": {
+        "bullet_point_x4QE3N": {
+          "type": "bullet-point",
+          "settings": {
+            "bullet_point": "Free shipping on orders over $20",
+            "boing_point_url": ""
+          }
+        },
+        "bullet_point_CgrVQX": {
+          "type": "bullet-point",
+          "settings": {
+            "bullet_point": "Customer Service: (800) 659-9940",
+            "boing_point_url": ""
+          }
+        },
+        "bullet_point_3mLh7K": {
+          "type": "bullet-point",
+          "settings": {
+            "bullet_point": "Quantity Discounts Available",
+            "boing_point_url": ""
+          }
+        },
+        "bullet_point_FRbjtz": {
+          "type": "bullet-point",
+          "settings": {
+            "bullet_point": "Hablamos Español",
+            "boing_point_url": ""
+          }
+        },
+        "bullet_point_MFPWdV": {
+          "type": "bullet-point",
+          "settings": {
+            "bullet_point": "Discover New Products",
+            "boing_point_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "bullet_point_x4QE3N",
+        "bullet_point_CgrVQX",
+        "bullet_point_3mLh7K",
+        "bullet_point_FRbjtz",
+        "bullet_point_MFPWdV"
+      ],
+      "disabled": true,
+      "settings": {
+        "bullet-background-color": "#80c9c4"
+      }
+    },
+    "custom_headline_Qrg8Pg": {
+      "type": "custom-headline",
+      "settings": {
+        "headlineA": "Welcome to",
+        "headlineB": "Bestvite",
+        "headline2_color": "#80c9c4",
+        "subtitle": ""
+      }
+    },
+    "custom_liquid_bcBMNK": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"text-align: center; max-width: 800px; margin: 0 auto; margin-top: -20px; padding: 0 10px;\">\n<p>We believe everyone deserves access to high-quality health supplements without the burden of high costs. Our journey began with a simple yet profound mission: to provide trusted, top-quality wellness products free from unwanted ingredients, at prices accessible to all. We're not just a brand; we're building a community dedicated to fostering a healthier, more vibrant world.</p>\n\n<a href=\"/pages/about-2024\" class=\"tw-bg-[#80C9C4] tw-text-[#363266] tw-rounded-full  tw-px-8 tw-py-4 tw-text-3xl tw-font-semibold tw-shadow-sm hover:tw-bg-[#363266] hover:tw-text-white focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-indigo-600\">\n                      Learn more\n                    </a>\n                    </div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_nKJxBt": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".yotpo-reviews-carousel-header {font-size: 30px; font-weight: 700 !important; text-align: center; text-wrap: pretty; line-height: 30px;}"
+      ],
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"778714\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_featured_collection_nEUBit": {
+      "type": "custom-featured-collection",
+      "custom_css": [],
+      "settings": {
+        "title": "Our Best Sellers",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "featured-button-text": "Shop Best Sellers",
+        "collection": "best-selling",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "bullet_points_aMfPQM": {
+      "type": "bullet-points",
+      "blocks": {
+        "bullet_point_MxMRKB": {
+          "type": "bullet-point",
+          "settings": {
+            "bullet_point": "Discover new products",
+            "boing_point_url": "shopify://pages/shipping-policy"
+          }
+        },
+        "bullet_point_7QMQ7m": {
+          "type": "bullet-point",
+          "settings": {
+            "bullet_point": "Free shipping on orders over $20",
+            "boing_point_url": ""
+          }
+        },
+        "bullet_point_YAemBr": {
+          "type": "bullet-point",
+          "settings": {
+            "bullet_point": "Earn points on every purchase",
+            "boing_point_url": "shopify://products/5-htp-100mg"
+          }
+        },
+        "bullet_point_VhcATD": {
+          "type": "bullet-point",
+          "settings": {
+            "bullet_point": "Call to order: (800) 659-9940",
+            "boing_point_url": ""
+          }
+        },
+        "bullet_point_Fekwq6": {
+          "type": "bullet-point",
+          "settings": {
+            "bullet_point": "Hablamos Español",
+            "boing_point_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "bullet_point_MxMRKB",
+        "bullet_point_7QMQ7m",
+        "bullet_point_YAemBr",
+        "bullet_point_VhcATD",
+        "bullet_point_Fekwq6"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".bullet-points-container {background: blue !important;}"
+      ],
+      "settings": {
+        "bullet-background-color": "#c9d646"
+      }
+    },
+    "custom_newsletter_pqkkXa": {
+      "type": "custom-newsletter",
+      "settings": {
+        "subscribe_message": "Subscribe today, nourish your wallet tomorrow.",
+        "background_color": "#363266",
+        "above_input_text_color": "#80c9c4",
+        "button_color": "#80c9c4",
+        "button_color_text": "#363266"
+      }
+    },
+    "custom_featured_collection_jE4eEX": {
+      "type": "custom-featured-collection",
+      "settings": {
+        "title": "New & Exciting",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "featured-button-text": "Shop New & Exciting",
+        "collection": "new-products",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_card_y6rJwy": {
+      "type": "custom-card",
+      "blocks": {
+        "multicard_tCVPhd": {
+          "type": "multicard",
+          "settings": {
+            "card_title": "Affordability: A Core Principle",
+            "card_body": "<p>We're driven by the belief that good health is a right, not a luxury. Our commitment to affordability means we work tirelessly to optimize our supply chain, reduce overheads, and implement efficient processes. This allows us to offer premium products at prices that are fair and friendly to your wallet. Our factory-direct model cuts out the middlemen, passing the savings on to our customers. We are proud to make wellness accessible to everyone, regardless of their financial situation.</p>",
+            "card_color": "#80c9c4",
+            "text_color": "#363266"
+          }
+        },
+        "multicard_6PTnnj": {
+          "type": "multicard",
+          "settings": {
+            "card_title": "Build Trust with Transparency",
+            "card_body": "<p>Trust is the cornerstone of our relationship with you. We're committed to absolute transparency about our sourcing, manufacturing, and testing processes. Our website and product packaging provide detailed information without making any unsubstantiated claims or promises. Our priority is to never use unwanted added ingredients and fillers. Whether you’re speaking with a member of our customer service team or a licensed pharmacist, we are here to answer your questions, offer guidance, and provide the information you need to make informed choices about your health. At Bestvite, your health journey is our passion. We're honored to be a part of your wellness story and are committed to being there for you, every step of the way. Quality and value, that's the Bestvite way.</p>",
+            "card_color": "#c9d646",
+            "text_color": "#00582a"
+          }
+        },
+        "multicard_Lh9GaC": {
+          "type": "multicard",
+          "settings": {
+            "card_title": "Dedication to Quality",
+            "card_body": "<p>Quality is the heartbeat of our brand. We understand that when it comes to your health, only the best will do. That's why we meticulously source the finest ingredients, backed by scientific research. Every ingredient undergoes thorough testing for purity and potency, ensuring the contents match the label's promises. Our manufacturing adheres to stringent quality standards known as GMP (Good Manufacturing Practice). We also work diligently to formulate pure products free of unwanted ingredients and fillers.</p>",
+            "card_color": "#f29169",
+            "text_color": "#790726"
+          }
+        }
+      },
+      "block_order": [
+        "multicard_tCVPhd",
+        "multicard_6PTnnj",
+        "multicard_Lh9GaC"
+      ],
+      "settings": {}
+    },
+    "image_banner_qTB7En": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_3zxb3C": {
+          "type": "heading",
+          "settings": {
+            "heading": "The most trusted name in vitamins <strong>®</strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3zxb3C"
+      ],
+      "custom_css": [
+        ".banner__heading {color: #fff; font-weight: 500; font-size: 60px;}",
+        ".banner--desktop-transparent .banner__box {max-width: 70rem;}",
+        "span {font-size: 2.5rem; margin-left: 3px;}",
+        ".banner__heading strong {font-size: 30px; margin-left: -10px;}",
+        "@media (max-width: 640px) {.banner__heading {font-size: 30px; } .banner__heading strong {font-size: 20px; margin-left: -5px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/premium_photo-1680294964692-f85f8f8028df.avif_1.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "custom_liquid_hAKxJK": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"text-align: center;\">\n<img src=\"{{ 'gmp-logo.png' | file_url }}\" width=200>\n</div>",
+        "color_scheme": "",
+        "padding_top": 68,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_mwtiYP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XDDKxc": {
+          "type": "column",
+          "settings": {
+            "title": "About <strong>NSF</strong>",
+            "text": "<p>NSF is an independent, global organization that develops standards to minimize adverse health effects and protect the environment. </p>",
+            "link_label": "Learn more",
+            "link": "shopify://pages/nsf"
+          }
+        },
+        "column_eTkwtL": {
+          "type": "column",
+          "settings": {
+            "title": "What is <strong>GMP</strong> certification?",
+            "text": "<p>Good Manufacturing Practices (GMP) are a system of processes, procedures, and documentation designed to exert control over product manufacturing, ensuring the quality and safety of the product.</p>",
+            "link_label": "Learn more",
+            "link": "shopify://pages/nsf"
+          }
+        },
+        "column_98RmwA": {
+          "type": "column",
+          "settings": {
+            "title": "What does it take to be <strong>NSF GMP </strong>certified?",
+            "text": "<p>NSF GMP certification verifies that a facility is audited annually for quality and safety, ensuring compliance with federal regulations, retailer input, and industry good manufacturing practices.</p>",
+            "link_label": "Learn more",
+            "link": "shopify://pages/nsf"
+          }
+        }
+      },
+      "block_order": [
+        "column_XDDKxc",
+        "column_eTkwtL",
+        "column_98RmwA"
+      ],
+      "custom_css": [
+        ".inline-richtext {font-size: 3rem; line-height: 3.5rem;}",
+        ".icon-wrap {background-color: #c9d646; padding: 6px 5px; border-radius: 25px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 80
+      }
+    },
+    "slideshow_egcCMi": {
+      "type": "slideshow",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "collection_list_rxALi6": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_N37iGU": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_yFinNm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_7egABm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_N37iGU",
+        "featured_collection_yFinNm",
+        "featured_collection_7egABm"
+      ],
+      "disabled": true,
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "slideshow_Njpbzj",
+    "custom_hero_v1_LBH7Hz",
+    "bullet_points_btXamT",
+    "custom_headline_Qrg8Pg",
+    "custom_liquid_bcBMNK",
+    "custom_liquid_nKJxBt",
+    "custom_featured_collection_nEUBit",
+    "bullet_points_aMfPQM",
+    "custom_newsletter_pqkkXa",
+    "custom_featured_collection_jE4eEX",
+    "custom_card_y6rJwy",
+    "image_banner_qTB7En",
+    "custom_liquid_hAKxJK",
+    "multicolumn_mwtiYP",
+    "slideshow_egcCMi",
+    "collection_list_rxALi6"
+  ]
+}

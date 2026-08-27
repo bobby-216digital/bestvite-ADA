@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<style>
+  .swiper-wrapper {
+    justify-content: space-evenly;
+  }
+
+  {
+    --swiper-navigation-size: 44px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color: var(--swiper-theme-color);
+  }
+</style>
+
+<div class=" tw-py-16 sm:tw-py-20 tw-overflow-clip" style="background-color: {{ section.settings.background_color }}">
+  <div class="product-icon-container">
+    <div class="swiper-wrapper">
+      {% assign product_icons = product.metafields.custom.product_icons.value %}
+      {% for product_icon in product_icons %}
+        <div class="swiper-slide tw-max-h-36  tw-pb-6 tw-text-center" {{ block.shopify_attributes }}>
+          <img
+            class="hover:tw-scale-125 tw-ease-in tw-duration-100"
+            src="{{ product_icon.icon_image | image_url: width: 80 }}"
+            alt="">
+          <span class="tw-block tw-text-center tw-mb-9 tw-mt-3 tw-text-[#00582A]   tw-leading-tight  tw-font-medium">
+            {{ product_icon.icon_title }}</span>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+  <script src="{{  'swiper-bundle.min.js' | asset_url  }}"></script>
+
+  <script>
+      var swiper = new Swiper(".product-icon-container", {
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        enabled: true
+      },
+    slidesPerView: 3,
+       autoplay: {
+       delay: 4500,
+       disableOnInteraction: false,
+     },
+    loop: true,
+    grabCursor: true,
+    keyboard: {
+      enabled: true
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 3
+      },
+      768: {
+        slidesPerView: 4
+      },
+      1024: {
+        slidesPerView: 6
+      },
+      1280: {
+        slidesPerView: 10
+      },
+      1536: {
+        slidesPerView: 10
+      },
+    }
+      });
+  </script>
+
+  {% schema %}
+    {
+      "name": "Product Icon Section",
+      "tag": "section",
+      "class": "section",
+      "settings": [
+        {
+          "type": "color",
+          "label": "Background Color",
+          "id": "background_color",
+          "default": "#F2F2F2"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Product Icon Section"
+        }
+      ]
+    }
+  {% endschema %}
+
+  {% stylesheet %}
+  {% endstylesheet %}
+
+  {% javascript %}
+  {% endjavascript %}

@@ -1,0 +1,115 @@
+<div class="tw-py-16 sm:tw-py-24 lg:tw-py-32" style="background: {{ section.settings.background_color }};">
+  <div class="tw-mx-auto tw-grid tw-max-w-[120rem] tw-grid-cols-1 tw-gap-2 tw-px-6 lg:tw-grid-cols-12 lg:tw-gap-8 lg:tw-px-8">
+    <div class="tw-max-w-4xl tw-tracking-tight lg:tw-col-span-7">
+      <h3 class="tw-inline sm:tw-block lg:tw-inline xl:tw-block tw-text-white tw-text-[38px] tw-font-valueSansProRegular">{{ section.settings.subscribe_message }}</h3>
+    </div>
+
+
+    <div class="lg:tw-col-span-5 tw-mt-10">
+      {% form 'customer' %}
+        <span class="tw-inline sm:tw-block lg:tw-inline xl:tw-block tw-text-[24px] tw-leading-normal" style="color: {{ section.settings.above_input_text_color }}">Join and save <br>Sign up for our newsletter</span>
+
+        <div class="tw-flex tw-gap-x-4 tw-pt-8     ">
+
+          <label for="email" class="tw-sr-only">Email address</label>
+          <input
+            id="NewsletterForm--{{ section.id }}"
+            type="email"
+            name="contact[email]"
+            class="tw-min-w-0  tw-text-3xl tw-flex-auto tw-rounded-full tw-border-0 tw-px-3.5 tw-py-2 tw-text-gray-900 tw-shadow-full  tw-h-[33px] tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600"
+            value="{{ form.email }}"
+            aria-required="true"
+            autocorrect="off"
+            autocapitalize="off"
+            autocomplete="email"
+            {% if form.errors %}
+            autofocus
+            aria-invalid="true"
+            aria-describedby="Newsletter-error--{{ section.id }}"
+            {% elsif form.posted_successfully? %}
+            aria-describedby="Newsletter-success--{{ section.id }}"
+            {% endif %}
+            placeholder="Enter your email"
+            required>
+
+
+          <div>
+            <label class="field__label" for="NewsletterForm--{{ section.id }}">
+              {{ 'newsletter.label' | t }}
+            </label>
+            <button
+              type="submit"
+              class="tw-flex-none  hover:tw-bg-[{{ section.settings.button_color }}]/70  tw-cursor-pointer tw-px-3.5 tw-py-2.5 tw-text-md tw-w-[99px] tw-h-[33px] tw-border-none  tw-rounded-full  tw-text-2xl"
+              name="commit"
+              id="Subscribe"
+              style="background-color: {{ section.settings.button_color }}; color: {{ section.settings.button_color_text }}"
+              aria-label="Send">Send</button>
+            {%- if form.errors -%}
+              <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                {%- render 'icon-error' -%}
+                {{- form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email -}}
+              </small>
+            {%- endif -%}
+            {%- if form.posted_successfully? -%}
+              <h3
+                class="newsletter-form__message newsletter-form__message--success form__message tw-text-white tw-block"
+                id="Newsletter-success--{{ section.id }}"
+                tabindex="-1"
+                autofocus>
+                {% render 'icon-success' -%}
+                {{- 'newsletter.success' | t }}
+              </h3>
+            {%- endif -%}
+          </div>
+
+        </div>
+      {% endform %}
+    </div>
+
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Custom Newsletter",
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "subscribe_message",
+        "label": "Subscribe Message",
+        "default": "Subscribe today, nourish your wallet tomorrow."
+      },
+      {
+        "type": "color",
+        "label": "Background Color",
+        "id": "background_color",
+        "default": "#363266"
+      },
+      {
+        "type": "color",
+        "label": "Text Color - Above Input Field",
+        "id": "above_input_text_color",
+        "default": "#80C9C4"
+      },
+      {
+        "type": "color",
+        "label": "Button Color",
+        "id": "button_color",
+        "default": "#80C9C4"
+      }, {
+        "type": "color",
+        "label": "Button Text Color",
+        "id": "button_color_text",
+        "default": "#363266"
+
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Newsletter"
+      }
+    ]
+  }
+{% endschema %}

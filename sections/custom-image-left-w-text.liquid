@@ -1,0 +1,74 @@
+<div class="tw-mx-auto tw-max-w-screen-2xl tw-px-4 tw-py-8 sm:tw-px-6 sm:tw-py-12 lg:tw-px-20 lg:tw-py-20">
+  <div class="tw-grid tw-grid-cols-1 tw-gap-8 md:tw-grid-cols-2 md:tw-gap-16">
+    <div class="tw-relative tw-h-auto lg:tw-order-first lg:tw-h-full tw-overflow-hidden">
+      {{ section.settings.custom_left_image_with_text | image_url: width: 655 | image_tag }}
+    </div>
+
+    <div class="lg:tw-py-24 tw-rounded-lg">
+      <h2 class="tw-text-6xl" style="color: {{ section.settings.headline_part_1_color }}">{{ section.settings.headline_part_1 }}
+        <span style="color: {{ section.settings.headline_part_2_color }}">
+          {{ section.settings.headline_part_2 }}</span>
+      </h2>
+
+      <p class="tw-mt-4">
+        {{ section.settings.custom_left_image_text }}
+      </p>
+
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Custom Image Left Text",
+    "class": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "label": "Left Image",
+        "id": "custom_left_image_with_text"
+      },
+      {
+        "type": "text",
+        "label": "Headline Part 1",
+        "id": "headline_part_1",
+        "default": "Lorem ipsum",
+        "placeholder": "Lorem ipsum"
+      },
+      {
+        "type": "color",
+        "label": "Headline Part 1 Color",
+        "id": "headline_part_1_color",
+        "default": "#000"
+      },
+      {
+        "type": "text",
+        "label": "Headline Part 2",
+        "id": "headline_part_2",
+        "default": "dolor"
+      }, {
+        "type": "color",
+        "label": "Headline Part 2 Color",
+        "id": "headline_part_2_color",
+        "default": "#80C9C4"
+      }, {
+        "type": "richtext",
+        "label": "Text",
+        "id": "custom_left_image_text"
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Custom Image Left Text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

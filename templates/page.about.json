@@ -1,0 +1,358 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_hero_v1_qPNMwT": {
+      "type": "custom-hero-v1",
+      "settings": {
+        "custom_hero_background_color": "#363266",
+        "headline_1": "Quality and value, that's the",
+        "headline_1_color": "#80c9c4",
+        "headline_2": "Bestvite way!",
+        "headline_2_color": "#ffffff",
+        "button_text": "Learn more",
+        "button_url": "#",
+        "button_background_color": "#80c9c4",
+        "button_text_color": "#363266",
+        "hero_image": "shopify://shop_images/original_57a9d762cc845998dc37d859eec9214d_1_1.jpg"
+      }
+    },
+    "custom_headline_LWKNGU": {
+      "type": "custom-headline",
+      "custom_css": [
+        ".custom-headling-subtitle {font-weight: 400 !important; font-size: 19px !important; font-family: value-sans-pro-regular; line-height: 28px !important; max-width: 741px;}"
+      ],
+      "settings": {
+        "headlineA": "About",
+        "headlineB": "Us",
+        "headline2_color": "#c9d646",
+        "subtitle": ""
+      }
+    },
+    "bullet_points_hjrWHR": {
+      "type": "bullet-points",
+      "custom_css": [],
+      "settings": {
+        "bullet-background-color": "#80c9c4"
+      }
+    },
+    "image_with_text_GhVaAi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kNKVtb": {
+          "type": "heading",
+          "settings": {
+            "heading1": "Our",
+            "heading1_color": "#000000",
+            "heading2": "Story",
+            "heading2_color": "#80c9c4",
+            "heading_size": "h1"
+          }
+        },
+        "text_THeEWa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Over 15 years ago, Bestvite was founded after a conversation between two brothers, a doctor and a pharmacist, who shared a simple but powerful goal: to create supplements they could wholeheartedly stand behind. At the time, growing research and industry discussion raised questions about common additives like magnesium stearate, used by many brands to speed up manufacturing rather than improve product quality. The brothers knew there had to be a better way, and that belief became the foundation of Bestvite. </p><p>Unlike most brands, which rely entirely on contract manufacturers to develop and produce their formulas, Bestvite manufactures its own products, giving the company full control over ingredients, quality, and formulation decisions, a rare advantage in the supplement industry. This independence allowed Bestvite to challenge what had long been considered “normal” in capsule production and pursue cleaner, more intentional standards from the very beginning.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kNKVtb",
+        "text_THeEWa"
+      ],
+      "custom_css": [
+        "img {border-top-left-radius: 26px; border-bottom-left-radius: 26px;}",
+        "@media (min-width: 480px) {img {max-height: 543px; margin-top: 150px; }}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/elsa-about.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_ygF4HU": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_h98Jw7": {
+          "type": "heading",
+          "settings": {
+            "heading1": "Dedicated to",
+            "heading1_color": "#000000",
+            "heading2": "Quality",
+            "heading2_color": "#80c9c4",
+            "heading_size": "h1"
+          }
+        },
+        "text_HJk3wM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Quality is the heartbeat of our brand. We understand that when it comes to your health, only the best will do. That's why we meticulously source the finest ingredients, backed by scientific research. Every ingredient undergoes thorough testing for purity and potency, ensuring the contents match the label's promises. We work diligently to formulate pure products free of unwanted ingredients and fillers. Our manufacturing adheres to stringent quality standards, known as GMP (Good Manufacturing Practice). To further solidify its commitment, Bestvite is also proudly GMP Certified by NSF for its manufacturing and warehouse facilities.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_h98Jw7",
+        "text_HJk3wM"
+      ],
+      "custom_css": [
+        "img {border-top-right-radius: 26px; border-bottom-right-radius: 26px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/elsa-olofsson-KWxHmyugJuM-unsplash_3.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_BDXifJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4bT7re": {
+          "type": "heading",
+          "settings": {
+            "heading1": "A Core Principle:",
+            "heading1_color": "#000000",
+            "heading2": "Affordability",
+            "heading2_color": "#80c9c4",
+            "heading_size": "h1"
+          }
+        },
+        "text_YbDmka": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're driven by the belief that good health is a right, not a luxury. Our commitment to affordability means we work tirelessly to optimize our supply chain, reduce overheads, and implement efficient processes. </p><p>This allows us to offer premium products at prices that are fair and friendly to your wallet. Our factory-direct model cuts out the middlemen, passing the savings on to our customers. </p><p>We are proud to make wellness accessible to everyone, regardless of their financial situation.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4bT7re",
+        "text_YbDmka"
+      ],
+      "custom_css": [
+        "img {border-top-left-radius: 26px; border-bottom-left-radius: 26px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/jenny-hill-mQVWb7kUoOE-unsplash_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_newsletter_jaGrej": {
+      "type": "custom-newsletter",
+      "settings": {
+        "subscribe_message": "Subscribe today, nourish your wallet tomorrow.",
+        "background_color": "#00582a",
+        "above_input_text_color": "#c9d646",
+        "button_color": "#c9d646",
+        "button_color_text": "#00582a"
+      }
+    },
+    "image_with_text_9JiMzb": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_6Xytnd": {
+          "type": "heading",
+          "settings": {
+            "heading1": "Build Trust with",
+            "heading1_color": "#000000",
+            "heading2": "Transparency",
+            "heading2_color": "#80c9c4",
+            "heading_size": "h1"
+          }
+        },
+        "text_b3L4PM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Trust is the cornerstone of our relationship with you. We're committed to transparency about our sourcing, manufacturing, and testing processes. </p><p>Our website and product packaging provide detailed information without making any unsubstantiated claims or promises. Our priority is to never use unwanted added ingredients and fillers. </p><p>Whether you’re speaking with a member of our customer service team or a licensed pharmacist, we are here to answer your questions, offer guidance, and provide the information you need to make informed choices about your health.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6Xytnd",
+        "text_b3L4PM"
+      ],
+      "custom_css": [
+        "img {border-top-right-radius: 26px; border-bottom-right-radius: 26px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/elsa-olofsson-KWxHmyugJuM-unsplash_4.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_cDkTU9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_3wU4kY": {
+          "type": "heading",
+          "settings": {
+            "heading1": "Qualify, Test,",
+            "heading1_color": "#000000",
+            "heading2": "Verify",
+            "heading2_color": "#80c9c4",
+            "heading_size": "h1"
+          }
+        },
+        "text_kzeUyW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We go through a strict process to qualify all of our suppliers and before any ingredients or components arrive at our facilities. Our quality team ensures all necessary GMP protocols are followed before bringing in the laboratory team for testing. We work closely with reputable and ISO certified 3rd party laboratories to meet our testing requirements. Some of the laboratories we have worked with include: Eurofins, Certified Laboratories, Intertek, Brighton Laboratories, and Venture Laboratories to name a few.</p><p>Dedication to quality is an ongoing effort, which is why we continuously monitor and verify our processes, making adjustments whenever necessary.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3wU4kY",
+        "text_kzeUyW"
+      ],
+      "custom_css": [
+        "img {border-top-left-radius: 26px; border-bottom-left-radius: 26px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/jenny-hill-mQVWb7kUoOE-unsplash_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "general_icon_section_qBzQgQ": {
+      "type": "general-icon-section",
+      "blocks": {
+        "icon_7WDAcU": {
+          "type": "Icon",
+          "settings": {
+            "icon-image": "shopify://shop_images/icon-check.svg",
+            "icon-title": "GMP Certified"
+          }
+        },
+        "icon_YatKYJ": {
+          "type": "Icon",
+          "settings": {
+            "icon-image": "shopify://shop_images/icon-soyfree.svg",
+            "icon-title": "Soy Free"
+          }
+        },
+        "icon_DwgLqj": {
+          "type": "Icon",
+          "settings": {
+            "icon-image": "shopify://shop_images/icon-nosugar_736fdf75-479b-48e5-8e53-8e9ac4e08e5b.svg",
+            "icon-title": "No Sugar Added"
+          }
+        },
+        "icon_fGWB9h": {
+          "type": "Icon",
+          "settings": {
+            "icon-image": "shopify://shop_images/icon-simpleformulation.svg",
+            "icon-title": "Simple Formulation"
+          }
+        },
+        "icon_H3qED4": {
+          "type": "Icon",
+          "settings": {
+            "icon-image": "shopify://shop_images/icon-majorallergenfree_3882904a-73aa-451d-991b-b27e6ea49ce2.svg",
+            "icon-title": "Major Allergen Free"
+          }
+        },
+        "icon_RRpY6V": {
+          "type": "Icon",
+          "settings": {
+            "icon-image": "shopify://shop_images/icon-clinicallystudied.svg",
+            "icon-title": "Science Backed"
+          }
+        }
+      },
+      "block_order": [
+        "icon_7WDAcU",
+        "icon_YatKYJ",
+        "icon_DwgLqj",
+        "icon_fGWB9h",
+        "icon_H3qED4",
+        "icon_RRpY6V"
+      ],
+      "settings": {
+        "background_color": "#f2f2f2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_hero_v1_qPNMwT",
+    "custom_headline_LWKNGU",
+    "bullet_points_hjrWHR",
+    "image_with_text_GhVaAi",
+    "image_with_text_ygF4HU",
+    "image_with_text_BDXifJ",
+    "custom_newsletter_jaGrej",
+    "image_with_text_9JiMzb",
+    "image_with_text_cDkTU9",
+    "general_icon_section_qBzQgQ"
+  ]
+}

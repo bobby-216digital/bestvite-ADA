@@ -1,0 +1,41 @@
+{% schema %}
+  {
+    "name": "Custom Text Slider",
+    "class": "section",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "text_slide",
+        "name": "Text Slide",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Slide Title",
+            "id": "slide_title",
+            "placeholder": "Affordability: A Core Principle"
+          }, {
+            "type": "richtext",
+            "label": "Slide Text",
+            "id": "slide_text"
+          }, {
+            "type": "color",
+            "label": "Background Color",
+            "id": "background_color",
+            "default": "#80c9c4"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Text Slider"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

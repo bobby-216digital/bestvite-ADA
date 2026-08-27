@@ -1,0 +1,270 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "order": [
+    "main",
+    "custom_icon_section_KfPB9L",
+    "collapsible_content_k8H6ik",
+    "custom_headline_yBFKUd",
+    "1716583301da4b1ba7",
+    "related-products"
+  ],
+  "sections": {
+    "1716583301da4b1ba7": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_ugc_reviews_W4VmpB": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "yotpo_product_reviews_ugc_star_rating_P6Cxc8": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_ugc_reviews_W4VmpB",
+        "yotpo_product_reviews_ugc_star_rating_P6Cxc8"
+      ],
+      "custom_css": [
+        ".yotpo .standalone-bottomline .star-clickable {justify-content: center !important;}",
+        ".yotpo .pull-left {text-align: center; float: initial;}",
+        ".yotpo-icon-star {font-size: 26px;}",
+        ".yotpo .text-m {font-size: 16px; margin-top: 5px;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "collapsible_content_k8H6ik": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_HqANr7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ product.metafields.custom.faq_question_2.value }}",
+            "default_heading": "Are you a GMP facility?",
+            "icon": "none",
+            "row_content": "{{ product.metafields.custom.faq_answer_2 | metafield_tag }}",
+            "default_row_content": "<p>Yes, we are an NSF-certified production facility. This certification ensures that our facility is audited annually for quality and safety, complying with federal regulations and industry good manufacturing practices (GMP).</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_frtm3Y": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ product.metafields.custom.faq_question_1.value }}",
+            "default_heading": "Where is Bestvite located?",
+            "icon": "none",
+            "row_content": "{{ product.metafields.custom.faq_answer_1 | metafield_tag }}",
+            "default_row_content": "<p>Bestvite's manufacturing facility is located in Sun Valley, California.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rR3zYd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ product.metafields.custom.faq_question_4.value }}",
+            "default_heading": "What separates your products from your competition?",
+            "icon": "none",
+            "row_content": "{{ product.metafields.custom.faq_answer_4 | metafield_tag }}",
+            "default_row_content": "<p>As both a manufacturing facility and a retailer, we offer factory direct pricing to our customers. Additionally, we control our own formulas, ensuring they are manufactured without stearates and other unnecessary fillers, setting our products apart from the competition.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zy6p7d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ product.metafields.custom.faq_question_3.value }}",
+            "default_heading": "Are your products tested?",
+            "icon": "none",
+            "row_content": "{{ product.metafields.custom.faq_answer_3 | metafield_tag }}",
+            "default_row_content": "<p>Our products are 3rd party tested by ISO Certified testing laboratories for potency and purity.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_frtm3Y",
+        "collapsible_row_HqANr7",
+        "collapsible_row_zy6p7d",
+        "collapsible_row_rR3zYd"
+      ],
+      "custom_css": [
+        ".accordion {background: white; border-radius: 26px; margin: 10px 5px;}",
+        ".accordion,.accordion__title {color: #000; padding-left: 10px;}",
+        ".collapse-subtitle {color: #fff; margin-bottom: 35px;}",
+        ".collapsible-content__heading {margin-bottom: -10px; font-size: 39px;}"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "You Have Questions. We Have Answers",
+        "subtitle": "Our knowledgeable team of experts is here to help.",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "scheme-3",
+        "container_color_scheme": "scheme-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_headline_yBFKUd": {
+      "type": "custom-headline",
+      "custom_css": [
+        "{margin-bottom: -30px;}",
+        "h3 {font-size: 35px !important;}"
+      ],
+      "settings": {
+        "headlineA": "Customer",
+        "headlineB": "Reviews",
+        "headline2_color": "#80c9c4",
+        "subtitle": ""
+      }
+    },
+    "custom_icon_section_KfPB9L": {
+      "type": "custom-icon-section",
+      "settings": {
+        "background_color": "#f2f2f2"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "collapsible_tab_3gy8bM": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Quality Assurance",
+            "icon": "none",
+            "content": "<p>All Bestvite products are produced in the USA according to GMP. All raw materials used in our products and all batches of finished products are laboratory tested using the state of the art testing equipments such as High Performance Liquid Chromotograpthy (HPLC), Fourier Transform Infrared spectroscopy (FTIR), UV/Vis Spectrophotometer, and Atomic Absorption Spectrophotomer.</p>",
+            "page": "",
+            "custom-liquid": ""
+          }
+        },
+        "collapsible_tab_jgN7g6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "More Info + Quality Assurance",
+            "icon": "none",
+            "content": "",
+            "page": "",
+            "custom-liquid": "{% assign split_description = product.description | split: \"<h5>More Info</h5>\" %}\n                    {{ split_description[1] }}"
+          }
+        },
+        "custom_liquid_eTXDMT": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<a href=\"{{ product.url }}#yotpo-app\">\n    <div class=\"yotpo bottomLine\"\n        data-product-id=\"{{ product.id }}\"\n        data-url=\"{{ product.url }}\">\n    </div>\n</a>"
+          }
+        },
+        "description_zzBb7c": {
+          "type": "description",
+          "settings": {}
+        },
+        "inventory_DxjxNt": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": false
+          }
+        },
+        "payment_options_notice_xDxD78": {
+          "type": "payment-options-notice",
+          "settings": {}
+        },
+        "price_quantity_buy_DqJNFe": {
+          "type": "price-quantity-buy",
+          "settings": {}
+        },
+        "sku_hBgQT6": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "yotpo_product_reviews_ugc_star_rating_rCXqfg": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "yotpo_product_reviews_ugc_star_rating_rCXqfg",
+        "custom_liquid_eTXDMT",
+        "sku_hBgQT6",
+        "inventory_DxjxNt",
+        "variant_picker",
+        "price_quantity_buy_DqJNFe",
+        "payment_options_notice_xDxD78",
+        "description_zzBb7c",
+        "collapsible_tab_jgN7g6",
+        "collapsible_tab_3gy8bM"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  }
+}

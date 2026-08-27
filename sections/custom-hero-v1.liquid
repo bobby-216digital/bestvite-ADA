@@ -1,0 +1,97 @@
+<div class="" style="background-color: {{ section.settings.custom_hero_background_color }}">
+  <div class="tw-overflow-hidden ">
+    <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2   tw-space-y-20 md:tw-space-y-0 md:tw-ml-[-25px] ">
+      <div class="  tw-py-24 md:tw-py-4 tw-pl-10 tw-pr-10 md:tw-pl-28 ">
+        <h1 class=" tw-text-[4rem] md:tw-text-7xl lg:tw-text-[5rem] xl:tw-text-[4em] 2xl:tw-text-[8rem]  tw-leading-tight tw-tracking-normal tw-font-valueSansProRegular" style="color: {{ section.settings.headline_1_color }}">{{ section.settings.headline_1 }}
+          <span class="" style="color: {{ section.settings.headline_2_color }}">{{ section.settings.headline_2 }}</span>
+        </h1>
+        <a
+          href="{{ section.settings.button_url }}"
+          class="tw-rounded-full  tw-px-8 tw-py-4 tw-text-3xl  tw-font-valueSansProMedium tw-shadow-sm hover:tw-opacity-50 focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-indigo-600"
+          style="background-color: {{ section.settings.button_background_color }}; color: {{ section.settings.button_text_color }}">{{ section.settings.button_text }}</a>
+      </div>
+      {% comment %} {{ section.settings.hero_image | image_url: width: 800 | image_tag }} {% endcomment %}
+      <img
+        class="tw-object-contain"
+        src="{{ section.settings.hero_image  | image_url: width: 1200 }}"
+        alt=""
+        width="100%"
+        height="100%">
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Custom Hero v1",
+    "tag": "section",
+    "class": "hero-v1",
+    "settings": [
+      {
+        "type": "color",
+        "label": "Background Color",
+        "id": "custom_hero_background_color",
+        "default": "#094720"
+      },
+      {
+        "type": "text",
+        "label": "Headline 1",
+        "id": "headline_1",
+        "placeholder": "Transparency you can see,"
+      },
+      {
+        "type": "color",
+        "label": "Headline 1 Color",
+        "id": "headline_1_color",
+        "default": "#c9D646"
+      },
+      {
+        "type": "text",
+        "label": "Headline 2",
+        "id": "headline_2",
+        "placeholder": "quality you can trust."
+      }, {
+        "type": "color",
+        "label": "Headline 2 Color",
+        "id": "headline_2_color",
+        "default": "#fff"
+      }, {
+        "type": "text",
+        "label": "Button Text",
+        "id": "button_text",
+        "placeholder": "Shop now"
+      }, {
+        "type": "url",
+        "label": "Button URL",
+        "id": "button_url"
+      }, {
+        "type": "color",
+        "label": "Button Background Color",
+        "id": "button_background_color",
+        "default": "#C9D646"
+      }, {
+        "type": "color",
+        "label": "Button Text Color",
+        "id": "button_text_color",
+        "default": "#094720"
+      }, {
+        "type": "image_picker",
+        "label": "Hero image",
+        "id": "hero_image"
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Custom Hero v1"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

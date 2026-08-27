@@ -1,0 +1,41 @@
+<div class="tw-flex tw-px-16">
+  <div class="tw-w-1/2">
+    <img src="{{ section.settings.custom-image-text |  image_url: width: 400  }}" alt="">
+  </div>
+  <div class=" tw-w-1/2">
+    <p>{{ section.settings.image-text }}</p>
+    <button>Learn more</button>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Custom Image w Text",
+    "tag": "section",
+    "class": "custom-image-text",
+    "settings": [
+      {
+        "type": "image_picker",
+        "label": "custom-image-text",
+        "id": "custom-image-text"
+      }, {
+        "type": "textarea",
+        "label": "Text",
+        "id": "image-text",
+        "placeholder": "At Bestvite, we believe that everyone deserves access to high-quality health supplements without the burden of high costs. Our journey began with a simple yet profound mission: to provide trusted, top quality wellness products at prices that are accessible to all. We're not just a brand; we're buildinga community dedicated to fostering a healthier, more vibrant world."
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Custom Image w Text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

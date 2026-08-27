@@ -1,0 +1,10 @@
+<div>
+    <h2 style="text-align: center; display: none">{{ page.title }}</h2>
+    {{ page.content }}
+    {% if customer %}
+      {% render 'smartrr-account' %}
+    {% else %}
+        <h2 style="text-align: center;">{{ page.title }}</h2><br>
+      <h4 style="text-align: center"><a href="{{ routes.storefront_login_url }}?return_to={{ '/pages/subscriptions' | url_encode }}">Login</a></h4>
+    {% endif %}
+</div>
