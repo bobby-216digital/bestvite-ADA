@@ -361,7 +361,7 @@
     "custom_liquid_hAKxJK": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"text-align: center;\">\n<img src=\"{{ 'gmp-logo.png' | file_url }}\" width=200>\n</div>",
+        "custom_liquid": "<div style=\"text-align: center;\">\n<img src=\"{{ 'gmp-logo.png' | file_url }}\" width=200 alt=\"GMP Certified\">\n</div>",
         "color_scheme": "",
         "padding_top": 68,
         "padding_bottom": 0

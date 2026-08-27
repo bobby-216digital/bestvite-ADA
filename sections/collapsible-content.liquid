@@ -95,13 +95,8 @@
                     {% render 'icon-accordion'
                       , icon: block.settings.icon %}
                     <h3 class="accordion__title inline-richtext h4">
-                      {{ block.settings.heading | default: block.settings.page.title | escape }}
+                      {{ block.settings.heading | default: block.settings.default_heading | default: block.settings.page.title | escape }}
                     </h3>
-                    {% if block.settings.heading == blank %}
-                      <h3 class="accordion__title inline-richtext h4">
-                        {{ block.settings.default_heading | default: block.settings.page.title | escape }}
-                      </h3>
-                    {% endif %}
                     {% render 'icon-caret' %}
                   </summary>
                   <div
@@ -130,7 +125,7 @@
 
         {% if product %}
           <div class=" tw-text-center">
-            <a href="/pages/faq" class=" tw-bg-[#80C9C4] hover:tw-bg-[#80C9C4]/70  tw-cursor-pointer  tw-px-8  tw-py-5  tw-h-[33px] tw-border-none  tw-text-[#363266] tw-rounded-full">
+            <a href="/pages/faq" class=" tw-bg-[#80C9C4] hover:tw-bg-[#80C9C4]/70  tw-cursor-pointer  tw-px-8  tw-py-5  tw-h-[33px] tw-border-none  tw-text-[#363266] tw-rounded-full" aria-label="Learn more on our FAQ page">
               Learn More
             </a>
           </div>
