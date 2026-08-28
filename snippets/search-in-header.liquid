@@ -15,7 +15,6 @@
         placeholder="{{ 'general.search.search' | t }}"
         {%- if settings.predictive_search_enabled -%}
         list="{{ input_id }}-datalist"
-        aria-expanded="false"
         aria-owns="predictive-search-results"
         aria-controls="predictive-search-results"
         aria-autocomplete="list"

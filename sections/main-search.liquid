@@ -94,7 +94,6 @@
                 placeholder="{{ 'general.search.search' | t }}"
                 {%- if settings.predictive_search_enabled -%}
                 list="Search-In-Template-datalist"
-                aria-expanded="false"
                 aria-owns="predictive-search-results"
                 aria-controls="predictive-search-results"
                 aria-autocomplete="list"
@@ -227,7 +226,6 @@
         {%- if search.filters != empty -%}
           {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
             <aside
-              aria-labelledby="verticalTitle"
               class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
               id="main-search-filters"
               data-id="{{ section.id }}">
