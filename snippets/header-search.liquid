@@ -43,6 +43,7 @@
         <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
           <div class="field">
             <input
+              aria-label="Header Search Store - Search Input Field"
               class="search__input field__input   tw-text-xl  md:tw-text-xl"
               id="{{ input_id }}"
               type="search"
@@ -50,11 +51,9 @@
               value="{{ search.terms | escape }}"
               placeholder="{{ 'general.search.search' | t }}"
               {%- if settings.predictive_search_enabled -%}
-                role="combobox"
-                aria-expanded="false"
+                list="{{ input_id }}-datalist"
                 aria-owns="predictive-search-results"
                 aria-controls="predictive-search-results"
-                aria-haspopup="listbox"
                 aria-autocomplete="list"
                 autocorrect="off"
                 autocomplete="off"
@@ -62,6 +61,9 @@
                 spellcheck="false"
               {%- endif -%}
             >
+            {%- if settings.predictive_search_enabled -%}
+              <datalist id="{{ input_id }}-datalist"></datalist>
+            {%- endif -%}
             <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
             <input type="hidden" name="options[prefix]" value="last">
             <button

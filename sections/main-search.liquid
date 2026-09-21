@@ -85,6 +85,7 @@
             class="search">
             <div class="field">
               <input
+                aria-label="Main Search Store - Search Input Field"
                 class="search__input field__input  tw-text-2xl"
                 id="Search-In-Template"
                 type="search"
@@ -92,17 +93,18 @@
                 value="{{ search.terms | escape }}"
                 placeholder="{{ 'general.search.search' | t }}"
                 {%- if settings.predictive_search_enabled -%}
-                role="combobox"
-                aria-expanded="false"
+                list="Search-In-Template-datalist"
                 aria-owns="predictive-search-results"
                 aria-controls="predictive-search-results"
-                aria-haspopup="listbox"
                 aria-autocomplete="list"
                 autocorrect="off"
                 autocomplete="off"
                 autocapitalize="off"
                 spellcheck="false"
                 {%- endif -%}>
+              {%- if settings.predictive_search_enabled -%}
+                <datalist id="Search-In-Template-datalist"></datalist>
+              {%- endif -%}
               <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
               <input
                 name="options[prefix]"
@@ -224,7 +226,6 @@
         {%- if search.filters != empty -%}
           {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
             <aside
-              aria-labelledby="verticalTitle"
               class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
               id="main-search-filters"
               data-id="{{ section.id }}">

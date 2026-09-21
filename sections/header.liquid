@@ -314,11 +314,9 @@
 
   {% unless search.performed  %} 
     <div class="tw-block md:tw-hidden tw-py-3 tw-my-6 tw-px-6">
-      {% render 'search-in-header' %}
+      {% render 'search-in-header-mobile' %}
     </div>
   {% endunless %}
-
-
 
 
 {%- if settings.cart_type == "notification" -%}
